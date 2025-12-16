@@ -11,7 +11,7 @@ export default function Footer() {
               <img 
                 src="/PHAROS_ENERGY_PLC_LOGO-transparent.png" 
                 alt="Pharos Energy PLC Logo" 
-                className="h-12 w-auto"
+                className="h-16 sm:h-20 w-auto"
               />
             </div>
             <p className="text-gray-400 text-sm max-w-md leading-relaxed">

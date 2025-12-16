@@ -24,7 +24,7 @@ export default function Header() {
             <img 
               src="/PHAROS_ENERGY_PLC_LOGO-transparent.png" 
               alt="Pharos Energy PLC Logo" 
-              className="h-12 sm:h-14 w-auto"
+              className="h-16 sm:h-20 w-auto"
             />
           </Link>
 
