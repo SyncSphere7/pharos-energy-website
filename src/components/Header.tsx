@@ -19,8 +19,8 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0A2540]/95 backdrop-blur-sm border-b border-white/10">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center space-x-2 sm:space-x-3 group">
+        <div className="flex items-center justify-center h-20 relative">
+          <Link to="/" className="absolute left-0 flex items-center space-x-2 sm:space-x-3 group">
             <img 
               src="/PHAROS_ENERGY_PLC_LOGO-transparent.png" 
               alt="Pharos Energy PLC Logo" 
@@ -46,7 +46,7 @@ export default function Header() {
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white p-2 hover:bg-white/5 rounded-md transition-colors"
+            className="md:hidden absolute right-0 text-white p-2 hover:bg-white/5 rounded-md transition-colors"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
