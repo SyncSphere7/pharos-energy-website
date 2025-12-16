@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Waves } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Header() {
@@ -21,13 +21,11 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2 sm:space-x-3 group">
-            <div className="bg-gradient-to-br from-[#D4AF37] to-[#B8952E] p-1.5 sm:p-2 rounded">
-              <Waves className="w-5 h-5 sm:w-6 sm:h-6 text-[#0A2540]" strokeWidth={2.5} />
-            </div>
-            <div>
-              <div className="text-white font-bold text-lg sm:text-xl tracking-tight">PHAROS ENERGY</div>
-              <div className="text-[#D4AF37] text-xs tracking-widest">PLC</div>
-            </div>
+            <img 
+              src="/PHAROS_ENERGY_PLC_LOGO-transparent.png" 
+              alt="Pharos Energy PLC Logo" 
+              className="h-12 sm:h-14 w-auto"
+            />
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">

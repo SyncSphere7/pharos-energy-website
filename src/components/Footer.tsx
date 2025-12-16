@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Waves, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -7,14 +7,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="bg-gradient-to-br from-[#D4AF37] to-[#B8952E] p-2 rounded">
-                <Waves className="w-5 h-5 text-[#0A2540]" strokeWidth={2.5} />
-              </div>
-              <div>
-                <div className="text-white font-bold text-lg tracking-tight">PHAROS ENERGY</div>
-                <div className="text-[#D4AF37] text-xs tracking-widest">PLC</div>
-              </div>
+            <div className="mb-4">
+              <img 
+                src="/PHAROS_ENERGY_PLC_LOGO-transparent.png" 
+                alt="Pharos Energy PLC Logo" 
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-gray-400 text-sm max-w-md leading-relaxed">
               A leading international energy company specializing in petroleum products and water materials.
