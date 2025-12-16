@@ -1,6 +1,5 @@
 import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
 import { useState, FormEvent } from 'react';
-import { supabase, type ContactInquiry } from '../lib/supabase';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -11,43 +10,16 @@ export default function Contact() {
     subject: '',
     message: '',
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-
-    try {
-      const inquiry: ContactInquiry = {
-        name: formData.name,
-        email: formData.email,
-        company: formData.company || undefined,
-        phone: formData.phone || undefined,
-        subject: formData.subject,
-        message: formData.message,
-      };
-
-      const { error } = await supabase.from('contact_inquiries').insert([inquiry]);
-
-      if (error) throw error;
-
-      setSubmitStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        subject: '',
-        message: '',
-      });
-    } catch (error) {
-      console.error('Error submitting inquiry:', error);
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
+    
+    const mailtoSubject = encodeURIComponent(formData.subject || 'General Inquiry');
+    const mailtoBody = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company || 'N/A'}\nPhone: ${formData.phone || 'N/A'}\n\nMessage:\n${formData.message}`
+    );
+    
+    window.location.href = `mailto:info@pharousenergy-plc.uk?subject=${mailtoSubject}&body=${mailtoBody}`;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -148,22 +120,7 @@ export default function Contact() {
             <div className="lg:col-span-2">
               <div className="bg-gray-50 p-6 sm:p-8 rounded-lg">
                 <h2 className="text-xl sm:text-2xl font-bold text-[#0A2540] mb-6">Send Us a Message</h2>
-
-                {submitStatus === 'success' && (
-                  <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-md">
-                    <p className="text-green-800">
-                      Thank you for your inquiry. Our team will be in touch with you shortly.
-                    </p>
-                  </div>
-                )}
-
-                {submitStatus === 'error' && (
-                  <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-md">
-                    <p className="text-red-800">
-                      There was an error submitting your inquiry. Please try again or contact us directly.
-                    </p>
-                  </div>
-                )}
+                <p className="text-gray-600 mb-6">Fill out the form below and it will open your email client with the information pre-filled.</p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -272,17 +229,10 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    disabled={isSubmitting}
-                    className="w-full px-8 py-4 bg-[#0A2540] text-white font-semibold rounded-md hover:bg-[#0A2540]/90 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                    className="w-full px-8 py-4 bg-[#0A2540] text-white font-semibold rounded-md hover:bg-[#0A2540]/90 transition-all flex items-center justify-center"
                   >
-                    {isSubmitting ? (
-                      'Sending...'
-                    ) : (
-                      <>
-                        Send Message
-                        <Send className="ml-2 w-5 h-5" />
-                      </>
-                    )}
+                    Send Message
+                    <Send className="ml-2 w-5 h-5" />
                   </button>
                 </form>
               </div>
