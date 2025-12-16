@@ -17,13 +17,13 @@ export default function TermsOfService() {
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-bold text-[#0A2540] mb-6">1. Acceptance of Terms</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              By accessing and using the Pharos Energy PLC website and services, you accept and agree to be bound by
+              By accessing and using the Pharous Energy PLC website and services, you accept and agree to be bound by
               these Terms of Service. If you do not agree to these terms, please do not use our website or services.
             </p>
 
             <h2 className="text-3xl font-bold text-[#0A2540] mb-6 mt-12">2. Company Information</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Pharos Energy PLC is a company registered in the United Kingdom, specializing in international trade
+              Pharous Energy PLC is a company registered in the United Kingdom, specializing in international trade
               of petroleum products and water materials. Our headquarters are located at 27/28 Eastcastle Street,
               London, W1W 8DH, United Kingdom.
             </p>
@@ -36,7 +36,7 @@ export default function TermsOfService() {
             <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
               <li>In any way that violates any applicable local, national, or international law or regulation</li>
               <li>To transmit any unsolicited or unauthorized advertising or promotional material</li>
-              <li>To impersonate or attempt to impersonate Pharos Energy PLC or any employee or representative</li>
+              <li>To impersonate or attempt to impersonate Pharous Energy PLC or any employee or representative</li>
               <li>To engage in any conduct that restricts or inhibits anyone's use of the website</li>
             </ul>
 
@@ -48,15 +48,15 @@ export default function TermsOfService() {
 
             <h2 className="text-3xl font-bold text-[#0A2540] mb-6 mt-12">4. Services</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Pharos Energy PLC provides international trading services for petroleum products and water materials.
+              Pharous Energy PLC provides international trading services for petroleum products and water materials.
               All service agreements are subject to separate commercial contracts and terms agreed upon between
-              Pharos Energy PLC and the client.
+              Pharous Energy PLC and the client.
             </p>
 
             <h2 className="text-3xl font-bold text-[#0A2540] mb-6 mt-12">5. Intellectual Property Rights</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
               All content on this website, including text, graphics, logos, images, and software, is the property
-              of Pharos Energy PLC or its content suppliers and is protected by international copyright laws.
+              of Pharous Energy PLC or its content suppliers and is protected by international copyright laws.
               You may not reproduce, distribute, modify, or create derivative works without our express written
               permission.
             </p>
@@ -82,14 +82,14 @@ export default function TermsOfService() {
 
             <h3 className="text-2xl font-semibold text-[#0A2540] mb-4 mt-8">7.3 Limitation of Liability</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              To the maximum extent permitted by law, Pharos Energy PLC shall not be liable for any indirect,
+              To the maximum extent permitted by law, Pharous Energy PLC shall not be liable for any indirect,
               incidental, special, consequential, or punitive damages arising out of or relating to your use of
               our website or services.
             </p>
 
             <h2 className="text-3xl font-bold text-[#0A2540] mb-6 mt-12">8. Indemnification</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              You agree to indemnify and hold harmless Pharos Energy PLC, its officers, directors, employees, and
+              You agree to indemnify and hold harmless Pharous Energy PLC, its officers, directors, employees, and
               agents from any claims, damages, losses, liabilities, and expenses arising out of your use of our
               website or violation of these Terms of Service.
             </p>
@@ -127,7 +127,7 @@ export default function TermsOfService() {
               For questions about these Terms of Service, please contact us:
             </p>
             <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-2"><strong>Pharos Energy PLC</strong></p>
+              <p className="text-gray-700 mb-2"><strong>Pharous Energy PLC</strong></p>
               <p className="text-gray-700 mb-2">27/28 Eastcastle Street</p>
               <p className="text-gray-700 mb-2">London, W1W 8DH</p>
               <p className="text-gray-700 mb-2">United Kingdom</p>

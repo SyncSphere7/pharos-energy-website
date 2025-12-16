@@ -60,7 +60,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-[#0A2540] mb-1">Headquarters</h3>
                     <p className="text-gray-600">
-                      Pharos Energy PLC
+                      Pharous Energy PLC
                       <br />
                       27/28 Eastcastle Street
                       <br />
@@ -244,7 +244,7 @@ export default function Contact() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#0A2540] mb-4">Why Partner With Pharos Energy?</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#0A2540] mb-4">Why Partner With Pharous Energy?</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

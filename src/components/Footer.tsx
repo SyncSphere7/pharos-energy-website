@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="mb-4">
               <img 
                 src="/PHAROS_ENERGY_PLC_LOGO-transparent.png" 
-                alt="Pharos Energy PLC Logo" 
+                alt="Pharous Energy PLC Logo" 
                 className="h-16 sm:h-20 w-auto"
               />
             </div>
@@ -68,7 +68,7 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} Pharos Energy PLC. All rights reserved.
+              &copy; {new Date().getFullYear()} Pharous Energy PLC. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link to="/privacy-policy" className="text-gray-500 hover:text-[#D4AF37] text-sm transition-colors">

@@ -23,11 +23,11 @@ export default function Header() {
           <Link to="/" className="absolute left-0 flex items-center space-x-2 sm:space-x-3 group">
             <img 
               src="/PHAROS_ENERGY_PLC_LOGO-transparent.png" 
-              alt="Pharos Energy PLC Logo" 
+              alt="Pharous Energy PLC Logo" 
               className="h-12 sm:h-16 md:h-20 w-auto"
             />
             <div className="hidden sm:block">
-              <div className="text-white font-bold text-base sm:text-lg md:text-xl lg:text-2xl tracking-tight">PHAROS ENERGY</div>
+              <div className="text-white font-bold text-base sm:text-lg md:text-xl lg:text-2xl tracking-tight">PHAROUS ENERGY</div>
               <div className="text-[#D4AF37] text-xs sm:text-sm tracking-widest">PLC</div>
             </div>
           </Link>

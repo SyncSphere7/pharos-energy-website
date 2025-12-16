@@ -6,7 +6,7 @@ export default function About() {
       <section className="relative py-24 bg-gradient-to-br from-[#0A2540] to-[#0D3A5F]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">About Pharos Energy</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">About Pharous Energy</h1>
             <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               A legacy of excellence in global energy trading, built on integrity, innovation, and commitment to our partners
             </p>
@@ -21,7 +21,7 @@ export default function About() {
               <h2 className="text-3xl sm:text-4xl font-bold text-[#0A2540] mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Founded in the heart of London, Pharos Energy PLC has grown from a regional petroleum trading
+                  Founded in the heart of London, Pharous Energy PLC has grown from a regional petroleum trading
                   company into a global force in energy commodities. Our name, inspired by the ancient lighthouse of
                   Alexandria, reflects our mission to guide and illuminate the path forward in international energy markets.
                 </p>

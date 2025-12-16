@@ -184,8 +184,8 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#0A2540] mb-6">Ready to Partner With Us?</h2>
-          <p className="text-lg sm:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Discover how Pharos Energy can optimize your supply chain and deliver value to your operations
+          <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Discover how Pharous Energy can optimize your supply chain and deliver value to your operations
           </p>
           <Link
             to="/contact"
