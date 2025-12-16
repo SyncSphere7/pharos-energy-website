@@ -19,16 +19,20 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0A2540]/95 backdrop-blur-sm border-b border-white/10">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center h-20 relative">
+        <div className="flex items-center justify-center h-20 sm:h-24 relative">
           <Link to="/" className="absolute left-0 flex items-center space-x-2 sm:space-x-3 group">
             <img 
               src="/PHAROS_ENERGY_PLC_LOGO-transparent.png" 
               alt="Pharos Energy PLC Logo" 
-              className="h-16 sm:h-20 w-auto"
+              className="h-12 sm:h-16 md:h-20 w-auto"
             />
+            <div className="hidden sm:block">
+              <div className="text-white font-bold text-base sm:text-lg md:text-xl lg:text-2xl tracking-tight">PHAROS ENERGY</div>
+              <div className="text-[#D4AF37] text-xs sm:text-sm tracking-widest">PLC</div>
+            </div>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-1">
             {navigation.map((item) => (
               <Link
                 key={item.path}
@@ -46,14 +50,14 @@ export default function Header() {
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden absolute right-0 text-white p-2 hover:bg-white/5 rounded-md transition-colors"
+            className="lg:hidden absolute right-0 text-white p-2 hover:bg-white/5 rounded-md transition-colors"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden pb-4 space-y-1">
+          <div className="lg:hidden pb-4 space-y-1">
             {navigation.map((item) => (
               <Link
                 key={item.path}
