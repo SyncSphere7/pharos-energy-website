@@ -22,7 +22,7 @@ export default function Header() {
         <div className="flex items-center justify-center h-20 sm:h-24 relative">
           <Link to="/" className="absolute left-0 flex items-center space-x-2 sm:space-x-3 group">
             <img 
-              src="/PHAROS_ENERGY_PLC_LOGO-transparent.png" 
+              src="/PHAROUS_ENERGY_PLC_LOGO-transparent.png" 
               alt="Pharous Energy PLC Logo" 
               className="h-12 sm:h-16 md:h-20 w-auto"
             />

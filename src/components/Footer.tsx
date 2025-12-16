@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="mb-4">
               <img 
-                src="/PHAROS_ENERGY_PLC_LOGO-transparent.png" 
+                src="/PHAROUS_ENERGY_PLC_LOGO-transparent.png" 
                 alt="Pharous Energy PLC Logo" 
                 className="h-16 sm:h-20 w-auto"
               />
